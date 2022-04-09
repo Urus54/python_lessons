@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let a = 1, b = 1, c, d;
+        c = ++a; // оператор инкремент прибавляет единицу к уже записанной в а
+        alert(c); // ответ: 2
+
+        //пример 2
+        d = b++; // постфиксная форма увеличивает значение на 1, но возвращает старое значение переменной
+        alert(d); //ответ: 1
+
+        //пример 3
+        c = 2 + ++a; // к записанной ранее в а 2 прибавляется 1 и она становится равной 3, потом 2 + 3 = 5
+        alert(c); //ответ: 5
+
+        //пример 4
+        d = 2 + b++; // постфиксная форма, b увеличивается на 1, но в сложении мы используем старое значение переменной 
+        alert(d); //ответ: 4
+
+        alert(a); //3
+        alert(b); //3
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let a = Number(prompt('Введите любое число "а"'));
+        let b = Number(prompt('Введите любое число "b"'));
+        let c = null;
+    while(true){    
+        if (a >= 0 && b >=0){
+            if (a>b){
+                c = a - b
+                alert(`Разность чисел а и b равна  ${c}`)
+                b        
+            }
+            else {
+                c = b - a
+                alert(`Разность чисел а и b равна  ${c}`)
+            } 
+           
+        break}
+        if(a<0 && b<0 && a!=0 && b!=0) {
+            c = a * b
+            alert(`Произведение чисел а и b равно  ${c}`)
+        }
+        else{
+            c = a + b
+            alert(`Сумма чисел а и b равна  ${c}`)
+        }
+    break}    
+    </script>
+    
+</body>
+</html>

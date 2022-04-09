@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result = null
+        function mathOperation(arg1,arg2,operation){
+            switch (operation) {
+                case "сложение":
+                    function addition(arg1,arg2){                                          
+                    return arg1 + arg2
+                }
+                    result = addition(arg1,arg2)
+                    alert(`Результат ${result}`)          
+                break;
+                case "вычитание":
+                    function subtraction(arg1,arg2){                                          
+                    return arg1 - arg2
+                }
+                    result = subtraction(arg1,arg2)
+                    alert(`Результат ${result}`)          
+                break;
+                case "умножение":
+                    function multiplication(arg1,arg2){                                          
+                    return arg1 * arg2
+                }
+                    result = multiplication(arg1,arg2)
+                    alert(`Результат ${result}`)          
+                break;
+                case "деление":
+                    function division(arg1,arg2){                                          
+                    return arg1 / arg2
+                }
+                    result = division(arg1,arg2)
+                    alert(`Результат ${result}`)          
+                break;
+                default:
+                    alert(`Неккоректный ввод "${operation}"! `) 
+
+                
+
+        }
+    }
+    console.log(mathOperation(10, 10, "сложение"));
+    console.log(mathOperation(5, 2, "вычитание"));
+    console.log(mathOperation(3, 3, "умножение"));
+    console.log(mathOperation(8, 2, "деление"));
+    console.log(mathOperation(8, 2, "assfgdhs"));
+    </script>
+</body>
+</html>
