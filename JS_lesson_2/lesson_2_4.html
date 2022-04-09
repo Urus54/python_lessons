@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let a = prompt("Введите знак желаемой арифметической операции +,-,* или /")
+        let d = null
+        if (a === "+"){                      
+            function addition(){
+                let b = Number(prompt("Введите первое число "))
+                let c = Number(prompt("Введите второе число "))                      
+                return b + c
+            }
+            let result = addition()
+            alert(`Результат ${result}`)
+        }
+        else if (a === "-"){
+            function subtraction(){
+                let b = Number(prompt("Введите первое число "))
+                let c = Number(prompt("Введите второе число "))                      
+                return b - c
+            }
+            let result = subtraction()
+            alert(`Результат ${result}`)
+
+        }
+        else if (a === "*"){
+            function multiplication(){
+                let b = Number(prompt("Введите первое число "))
+                let c = Number(prompt("Введите второе число "))                      
+                return b * c
+            }
+            let result = multiplication()
+            alert(`Результат ${result}`)
+        }
+        else if (a === "/"){
+            function division(){
+                let b = Number(prompt("Введите первое число "))
+                let c = Number(prompt("Введите второе число "))                      
+                return b / c
+            }
+            let result = division()
+            alert(`Результат ${result}`)
+        }
+        else{
+            alert("Неккоректный ввод!")
+        }
+        
+    </script>
+    
+</body>
+</html>
