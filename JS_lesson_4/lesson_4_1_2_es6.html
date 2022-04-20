@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+
+        class Post {
+            constructor(author, text, date) {
+                this.author = author
+                this.text = text
+                this.date = date
+            }
+            edit() {
+                this.text = prompt('Введите текст')
+            }
+        }
+
+        class AttachedPost extends Post {
+            constructor(author, text, date, highlighted) {
+                super(author, text, date)
+                this.highlighted = highlighted
+
+            }
+            edit2() {
+                this.text = prompt('Введите текст')
+            }
+            makeTextHighlighted() {
+                this.highlighted = true
+            }
+
+        }
+
+        const post1 = new Post('John', '555', '12.12.22')
+        console.log(post1.text) // 555
+        post1.edit()
+        console.log(post1) // Post {author: 'John', text: '123', date: '12.12.22'}
+        const post2 = new AttachedPost('Tom', '777', '10.10.22', false)
+        console.log(post2) // AttachedPost {author: 'Tom', text: '777', date: '10.10.22', highlighted: false}
+        post2.makeTextHighlighted()
+        console.log(post2) // AttachedPost {author: 'Tom', text: '777', date: '10.10.22', highlighted: true}
+    </script>
+
+</body>
+
+</html>
